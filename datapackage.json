@@ -1,0 +1,62 @@
+{
+  "name": "conditions",
+  "title": "Intervention databases for OpenTrials",
+  "homepage": "http://opentrials.net/",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "resources": [
+    {
+      "name": "conditions",
+      "path": "data/conditions.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "slug",
+            "type": "string",
+            "description": "Short URL-compatible identifier"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Name of register"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Main URL for general information"
+          },
+          {
+            "name": "license_url",
+            "type": "string",
+            "description": "License URL (if it exists)"
+          },
+          {
+            "name": "download_url",
+            "type": "string",
+            "description": "Download URL (if it exists)"
+          },
+          {
+            "name": "data_access_type",
+            "type": "string",
+            "enum": ["scrape", "download", "api"],
+            "description": "Method of downloading information"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": "Description"
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Notes"
+          }
+        ]
+      }
+    }
+  ],
+  "description": "Conditions",
+  "repository": "https://github.com/opentrials/conditions.git"
+}
