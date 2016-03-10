@@ -1,5 +1,7 @@
 # Condition Databases
 
+[![Gitter](https://img.shields.io/gitter/room/opentrials/chat.svg)](https://gitter.im/opentrials/chat)
+
 A Data Package which is a database of public and private sources of
 information on health conditions related to clinical trials.
 
